@@ -17,7 +17,6 @@ export function getSuggestions(items: Item[], budgetCap: number): Suggestion[] {
   }
 
   // Suggest decreasing quantities of most expensive line items first
-  const sorted = [...items].sort((a, b) => (b.price * b.quantity) - (a.price * a.quantity))
   suggestions.push({
     message: 'Reduce quantity of top-cost items until within budget',
     apply: (list) => {
