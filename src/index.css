@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: "Baloo 2", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  @apply bg-gradient-to-b from-pink-50 via-sky-50 to-white text-slate-800 antialiased;
+}
